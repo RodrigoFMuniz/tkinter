@@ -11,5 +11,10 @@ window.title('Notepad')
 
 window.minsize(width=780, height=520)
 
+# Adicionando área de texto
+text_area = tk.Text(window, font='Arial 20 bold')
+text_area.pack()
+
+
 # Iniciando a janela
 window.mainloop()

@@ -7,5 +7,9 @@ window = tk.Tk()
 
 window.title('Notepad')
 
+# Tamanho mínimo
+
+window.minsize(width=780, height=520)
+
 # Iniciando a janela
 window.mainloop()

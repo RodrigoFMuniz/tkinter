@@ -15,3 +15,7 @@
 ## Propriedades da janela -> Title
 
     window.title('Notepad')
+
+## Propriedades da janela -> minsize
+
+    window.minsize(width=780, height=520)

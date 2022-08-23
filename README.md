@@ -11,3 +11,7 @@
 ## Executando a primeira janela
 
     window.mainloop()
+
+## Propriedades da janela -> Title
+
+    window.title('Notepad')

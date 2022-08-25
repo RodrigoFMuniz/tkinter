@@ -15,6 +15,17 @@ window.minsize(width=780, height=520)
 text_area = tk.Text(window, font='Arial 20 bold')
 text_area.pack()
 
+# Menu
+
+main_menu = tk.Menu(window)
+
+file_menu = tk.Menu(main_menu)
+file_menu.add_command(label='New')
+file_menu.add_command(label='Save as ...')
+file_menu.add_command(label='Save')
+
+main_menu.add_cascade(label='Menu', menu=file_menu)
+window.config(menu=main_menu)
 
 # Iniciando a janela
 window.mainloop()

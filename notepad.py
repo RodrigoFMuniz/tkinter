@@ -19,7 +19,7 @@ text_area.pack()
 
 main_menu = tk.Menu(window)
 
-file_menu = tk.Menu(main_menu)
+file_menu = tk.Menu(main_menu, tearoff=0)
 file_menu.add_command(label='New', command=None)
 file_menu.add_command(label='Save as ...', command=None)
 file_menu.add_command(label='Save', command=None)

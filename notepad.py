@@ -1,9 +1,20 @@
 import tkinter as tk
 
+
 # Instanciando a janela
 window = tk.Tk()
 
+
+def NewFile():
+    print('Hello World!')
+
+
+def quit():
+    print('tchau')
+    window.quit()
+
 # Mudando o título
+
 
 window.title('Notepad')
 
@@ -20,13 +31,14 @@ text_area.pack()
 main_menu = tk.Menu(window)
 
 file_menu = tk.Menu(main_menu, tearoff=0)
-file_menu.add_command(label='New', command=None)
+file_menu.add_command(label='New', command=NewFile)
 file_menu.add_command(label='Save as ...', command=None)
 file_menu.add_command(label='Save', command=None)
-file_menu.add_command(label='Exit', command=window.quit)
+file_menu.add_command(label='Exit', command=quit)
 
 main_menu.add_cascade(label='Menu', menu=file_menu)
-window.config(menu=main_menu)
+window.config(menu=main_menu,)
+
 
 # Iniciando a janela
 window.mainloop()

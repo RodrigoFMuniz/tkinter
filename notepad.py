@@ -5,8 +5,22 @@ import tkinter as tk
 window = tk.Tk()
 
 
+# Mudando o título
+
+
+window.title('Notepad')
+
+# Tamanho mínimo
+
+window.minsize(width=780, height=520)
+
+# Adicionando área de texto
+text_area = tk.Text(window, font='Arial 20 bold', width=780, height=520)
+text_area.pack()
+
+
 def NewFile():
-    print('Hello World!')
+    text_area.delete(1.0, "end")
 
 
 def Save():
@@ -21,18 +35,6 @@ def quit():
     print('tchau')
     window.quit()
 
-# Mudando o título
-
-
-window.title('Notepad')
-
-# Tamanho mínimo
-
-window.minsize(width=780, height=520)
-
-# Adicionando área de texto
-text_area = tk.Text(window, font='Arial 20 bold', width=780, height=520)
-text_area.pack()
 
 # Menu
 

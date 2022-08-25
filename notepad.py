@@ -23,6 +23,7 @@ file_menu = tk.Menu(main_menu)
 file_menu.add_command(label='New')
 file_menu.add_command(label='Save as ...')
 file_menu.add_command(label='Save')
+file_menu.add_command(label='Exit', command=window.quit)
 
 main_menu.add_cascade(label='Menu', menu=file_menu)
 window.config(menu=main_menu)

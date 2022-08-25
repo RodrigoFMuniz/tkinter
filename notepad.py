@@ -9,6 +9,14 @@ def NewFile():
     print('Hello World!')
 
 
+def Save():
+    print('Save ...')
+
+
+def Save_As():
+    print('Save as ...')
+
+
 def quit():
     print('tchau')
     window.quit()
@@ -32,8 +40,8 @@ main_menu = tk.Menu(window)
 
 file_menu = tk.Menu(main_menu, tearoff=0)
 file_menu.add_command(label='New', command=NewFile)
-file_menu.add_command(label='Save as ...', command=None)
-file_menu.add_command(label='Save', command=None)
+file_menu.add_command(label='Save as ...', command=Save_As)
+file_menu.add_command(label='Save', command=Save)
 file_menu.add_command(label='Exit', command=quit)
 
 main_menu.add_cascade(label='Menu', menu=file_menu)
